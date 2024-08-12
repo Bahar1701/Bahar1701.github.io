@@ -1,0 +1,138 @@
+/*SECTION STYLING*/
+section {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*NAVIGATION BAR CSS*/
+.navBar {
+    background-color: rgb(223, 220, 189);
+    z-index: 99;
+    overflow: hidden;
+}
+
+.navBar a {
+    float: left;
+    color: #333333;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    background-color: rgba(240, 230, 140, 0.463);
+    color: rgba(255, 47, 0, 0.888);
+}
+
+/*FOOTER STYLING*/
+footer {
+    background-color: #faf0c6;
+    color: black;
+    position: sticky;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+.pdf-down{
+    background-color: #f7e8a9;
+    color:black;
+    padding: 20px;
+    text-decoration: double;
+}
+.pdf-down:hover{
+    background-color: rgba(4, 219, 243, 0.32);
+}
+.gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding: 10px;
+}
+.gallery:hover{
+    border: 1px solid #FBE0E0;
+}
+.description{
+    padding: 15px;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/*DARK MODE STYLING*/
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+}
+
+/*DARK MODE SWITCH STYLING */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/*Back to Top button Styling*/
+#back-to-top{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    background-color: #FBE0E0;
+    color: purple;
+    display: none;
+}
+#back-to-top.show{
+    display:block !important;
+}
+body.dark-mode #back-to-top{
+    background-color: #faf0c6;
+    color: red;
+}

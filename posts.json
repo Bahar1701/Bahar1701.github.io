@@ -1,0 +1,27 @@
+[
+    {
+        "title":"Process for implementing dark/light mode",
+        "text": "First step is to add a toggle switch in the CSS, and we obviously need the HTML element for it. The HTML element would be a label and an input checkbox with an onchange event that calls the toggleDarkMode function. Next step is to define a toggle function in the script.js file. This function will toggle the dark-mode class on the body element. We should keep in mind that we have the dark mode style implemented in the styles.css, so that whenever we call for dark mode, it changes accordingly.",
+        "author":"Bahar Azmi"
+        
+    },
+    {
+        "title":"Process for implementing the dynamic blog section",
+        "text": "First step is to create a JSON file for blog posts called posts.json, which contains array of blog post objects and each of them has title, text, and author properties. Then we need to add an element for blog page in the index.html file. For that, we add a div element with id of blog-posts inside the blog element. Then we have to fetch the json data and create blog post elements. In the script.js we added event listener, in which it ensures that the script runs after the html document loaded. Inside the event listener, we fetch the json posts, then parse it into js array via response.json method. Loop through each blog post, using forEach, create a new div element with class of post using document.createElement(div). Create 3 child elements, h2 for title, p for text, and other p for author. Append the child element to the post element, then append the post element itself to the blog-post element. For handling errors, we added an error handling using catch method, at the end we need to log the loaded posts to the console, using console.log. ",
+        "author":"Bahar Azmi"
+        
+    },
+    {
+        "title":"Blog Post title 3",
+        "text": "Text of blog post 3 here.",
+        "author":"Debby R."
+        
+    },
+    {
+        "title":"Blog Post title 4",
+        "text": "Text of blog post 4 here.",
+        "author":"Anisha L."
+        
+    }
+    
+]
